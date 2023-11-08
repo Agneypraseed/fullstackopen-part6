@@ -4,8 +4,7 @@ const App = () => {
   const anecdotes = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const vote = (id) => {
-    console.log("clicked vote");
+  const vote = (id) => {    
     dispatch({
       type: "VOTE",
       payload: {
