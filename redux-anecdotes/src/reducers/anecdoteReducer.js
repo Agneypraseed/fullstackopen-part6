@@ -27,16 +27,34 @@ const reducer = (state = initialState, action) => {
       const changedAnecdote = {
         ...anecdoteToChange,
         votes: anecdoteToChange.votes + 1,
-      };      
+      };
       const newState = state.map((anecdote) =>
         anecdote.id !== id ? anecdote : changedAnecdote
       );
       return newState.sort((a, b) => b.votes - a.votes);
-    case "NEW_ANECDOTE":      
-      return [...state,...[action.payload.content].map(asObject)];
+    case "NEW_ANECDOTE":
+      return [...state, ...[action.payload.content].map(asObject)];
     default:
       return state;
   }
+};
+
+export const createAnecdote = (anecdote) => {
+  return {
+    type: "NEW_ANECDOTE",
+    payload: {
+      content: anecdote,
+    },
+  };
+};
+
+export const voteAnecdote = (id) => {
+  return {
+    type: "VOTE",
+    payload: {
+      id: id,
+    },
+  };
 };
 
 export default reducer;
