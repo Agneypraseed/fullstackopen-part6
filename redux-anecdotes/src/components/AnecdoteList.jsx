@@ -9,7 +9,7 @@ const AnecdoteList = () => {
   });
   const dispatch = useDispatch();
 
-  const vote = (id) => {
+  const vote = (id) => {    
     dispatch(voteAnecdote(id));
   };
 
