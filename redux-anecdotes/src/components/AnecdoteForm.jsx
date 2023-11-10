@@ -1,5 +1,9 @@
 import { createAnecdote } from "../reducers/anecdoteReducer";
 import { useDispatch } from "react-redux";
+import {
+  resetNotification,
+  setCreatedNotification,
+} from "../reducers/notificationReducer";
 
 function AnecdoteForm() {
   const dispatch = useDispatch();
@@ -10,6 +14,10 @@ function AnecdoteForm() {
     event.target[0].value = "";
 
     dispatch(createAnecdote(anecdote));
+    dispatch(setCreatedNotification(anecdote));
+    setTimeout(() => {
+      dispatch(resetNotification());
+    }, 5000);
   };
 
   return (
@@ -17,7 +25,7 @@ function AnecdoteForm() {
       <h2>create new</h2>
       <form onSubmit={addAnecdote}>
         <div>
-          <input required/>
+          <input required />
         </div>
         <button type="submit">create</button>
       </form>
