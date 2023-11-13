@@ -8,8 +8,19 @@ const AnecdoteForm = () => {
 
   const newNoteMutation = useMutation({
     mutationFn: createAnecdote,
-    onSuccess: () => {
+    onSuccess: (data) => {
       queryClient.invalidateQueries({ queryKey: ["anecdotes"] });
+      const { content } = data;
+      dispatch({ type: "CREATED", content });
+      setTimeout(() => {
+        dispatch({ type: "DEFAULT" });
+      }, 5000);
+    },
+    onError: () => {
+      dispatch({ type: "FAILED" });
+      setTimeout(() => {
+        dispatch({ type: "DEFAULT" });
+      }, 5000);
     },
   });
 
@@ -18,10 +29,6 @@ const AnecdoteForm = () => {
     const content = event.target.anecdote.value;
     event.target.anecdote.value = "";
     newNoteMutation.mutate({ content, votes: 0 });
-    dispatch({ type: "CREATED", content });
-    setTimeout(() => {
-      dispatch({ type: "DEFAULT" });
-    }, 5000);
   };
 
   return (

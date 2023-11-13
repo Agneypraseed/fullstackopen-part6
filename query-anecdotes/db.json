@@ -3,7 +3,7 @@
     {
       "content": "If it hurts, do it more often",
       "id": "47145",
-      "votes": 25
+      "votes": 27
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
@@ -13,7 +13,7 @@
     {
       "content": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
       "id": "69581",
-      "votes": 20
+      "votes": 23
     },
     {
       "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
@@ -23,7 +23,7 @@
     {
       "content": "Premature optimization is the root of all evil.",
       "id": "25170",
-      "votes": 0
+      "votes": 9
     },
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
@@ -124,6 +124,71 @@
       "content": "new anecdote",
       "votes": 0,
       "id": "CofZqyC"
+    },
+    {
+      "content": "new one",
+      "votes": 0,
+      "id": "s0-AKvx"
+    },
+    {
+      "content": "new anecdote",
+      "votes": 0,
+      "id": "3PYZpqK"
+    },
+    {
+      "content": "123213",
+      "votes": 0,
+      "id": "mDWnyNd"
+    },
+    {
+      "content": "added new",
+      "votes": 0,
+      "id": "rgtwSSL"
+    },
+    {
+      "content": "new one",
+      "votes": 0,
+      "id": "T0XbmwM"
+    },
+    {
+      "content": "added new",
+      "votes": 0,
+      "id": "MqIb2Rh"
+    },
+    {
+      "content": "new one",
+      "votes": 0,
+      "id": "Mr67-B9"
+    },
+    {
+      "content": "added new",
+      "votes": 0,
+      "id": "KK1Zruu"
+    },
+    {
+      "content": "new anecdote",
+      "votes": 0,
+      "id": "O5aw-hj"
+    },
+    {
+      "content": "new one",
+      "votes": 0,
+      "id": "RjghBOE"
+    },
+    {
+      "content": "new anecdote",
+      "votes": 0,
+      "id": "gVV3cGR"
+    },
+    {
+      "content": "new one",
+      "votes": 0,
+      "id": "gVjMDT8"
+    },
+    {
+      "content": "new one",
+      "votes": 0,
+      "id": "bHSJSpU"
     }
   ]
 }
